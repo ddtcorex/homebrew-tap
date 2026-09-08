@@ -5,21 +5,21 @@
 class Govard < Formula
   desc "Govard local development orchestrator CLI"
   homepage "https://github.com/ddtcorex/govard"
-  version "1.71.0-beta.6"
+  version "1.71.0-beta.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ddtcorex/govard/releases/download/v1.71.0-beta.6/govard_1.71.0-beta.6_Darwin_amd64.tar.gz"
-      sha256 "2cc0c0d6c929bbe7a1adf469add7e73765b45f857678db3363fd161246618111"
+      url "https://github.com/ddtcorex/govard/releases/download/v1.71.0-beta.8/govard_1.71.0-beta.8_Darwin_amd64.tar.gz"
+      sha256 "d386ac551f8e2a56f21b745fff1b2dc9c181fa56bfd5550b4c5ad6dced08be42"
 
       define_method(:install) do
         bin.install "govard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ddtcorex/govard/releases/download/v1.71.0-beta.6/govard_1.71.0-beta.6_Darwin_arm64.tar.gz"
-      sha256 "447ecb857ba608a15696f4cd6d72ef20adc96d718f11ab0abf4b2a0d737a8e16"
+      url "https://github.com/ddtcorex/govard/releases/download/v1.71.0-beta.8/govard_1.71.0-beta.8_Darwin_arm64.tar.gz"
+      sha256 "6a6282caa1fcc7081ac697693e330aa8bdb4351232124792680791ff3aaa3c5a"
 
       define_method(:install) do
         bin.install "govard"
@@ -29,15 +29,15 @@ class Govard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ddtcorex/govard/releases/download/v1.71.0-beta.6/govard_1.71.0-beta.6_Linux_amd64.tar.gz"
-      sha256 "e1e6ab8159d1fd3ad592f1100989ba3875fc8707ae06de30b12ee2361cb636d9"
+      url "https://github.com/ddtcorex/govard/releases/download/v1.71.0-beta.8/govard_1.71.0-beta.8_Linux_amd64.tar.gz"
+      sha256 "0881abf319079346ee3fd81f9dc3dd501778e6a81bb41c5c94e09d69946142d3"
       define_method(:install) do
         bin.install "govard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ddtcorex/govard/releases/download/v1.71.0-beta.6/govard_1.71.0-beta.6_Linux_arm64.tar.gz"
-      sha256 "5273e683067c6905653bf727ad54e9b852644a34869ffececb5dd31b1fd9c1e0"
+      url "https://github.com/ddtcorex/govard/releases/download/v1.71.0-beta.8/govard_1.71.0-beta.8_Linux_arm64.tar.gz"
+      sha256 "1f992fb72ca5d94435f7b1d31cceb57d959d3464bc863894ce3fbd34cb4b3f26"
       define_method(:install) do
         bin.install "govard"
       end
