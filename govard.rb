@@ -5,21 +5,21 @@
 class Govard < Formula
   desc "Govard local development orchestrator CLI"
   homepage "https://github.com/ddtcorex/govard"
-  version "1.76.1"
+  version "1.76.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ddtcorex/govard/releases/download/v1.76.1/govard_1.76.1_Darwin_amd64.tar.gz"
-      sha256 "195fb46732a8f392839a0568437a2f64905ead9166164c8130bb03e15be5d58d"
+      url "https://github.com/ddtcorex/govard/releases/download/v1.76.2/govard_1.76.2_Darwin_amd64.tar.gz"
+      sha256 "b616240a2f2a6152bd1fe7d16aa6268c70f704f45d5b227cb63a96503c584c2a"
 
       define_method(:install) do
         bin.install "govard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ddtcorex/govard/releases/download/v1.76.1/govard_1.76.1_Darwin_arm64.tar.gz"
-      sha256 "64394f1a2130b8cda9e8cbcb4fdd18e02d01e827358588776526f4b2f00552d5"
+      url "https://github.com/ddtcorex/govard/releases/download/v1.76.2/govard_1.76.2_Darwin_arm64.tar.gz"
+      sha256 "bac1ac2f4bab4a1c3f3e8e9969bf1edd4e387a38bd22d868ad9d3bc374a7b390"
 
       define_method(:install) do
         bin.install "govard"
@@ -29,15 +29,15 @@ class Govard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ddtcorex/govard/releases/download/v1.76.1/govard_1.76.1_Linux_amd64.tar.gz"
-      sha256 "bb659cde9cf55cd65a8a327f6626bba4a1a47822d1f54d06a9a7d71cc48f8aea"
+      url "https://github.com/ddtcorex/govard/releases/download/v1.76.2/govard_1.76.2_Linux_amd64.tar.gz"
+      sha256 "865e94f3c7037855010c73211da2a30b547cfc3180fa4b4650dfe1752d151288"
       define_method(:install) do
         bin.install "govard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ddtcorex/govard/releases/download/v1.76.1/govard_1.76.1_Linux_arm64.tar.gz"
-      sha256 "58fd16cc1ef9881c467c6d923dffaa03cccc96e1b30c9b879408268d3a1ec8c9"
+      url "https://github.com/ddtcorex/govard/releases/download/v1.76.2/govard_1.76.2_Linux_arm64.tar.gz"
+      sha256 "136c78799b8b06890e3e6ab00ebfe5e7a49084d3ac1a25e53095597e1b399b6e"
       define_method(:install) do
         bin.install "govard"
       end
